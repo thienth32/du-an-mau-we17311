@@ -1,0 +1,1 @@
+<h2>Nội dung trang dashboard index</h2>

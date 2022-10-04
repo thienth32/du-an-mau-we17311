@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WE17311 - Lập trình website - FPT Poly</title>
-    <link rel="stylesheet" href="/we17311/content/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/we17311/content/css/style.css">
+    <link rel="stylesheet" href="<?= CONTENT_URL ?>/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?= CONTENT_URL ?>/css/style.css">
 </head>
 
 <body>
@@ -20,13 +20,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/we17311/site/index.php">Trang Chủ</a>
+                        <a class="nav-link active" aria-current="page" href="<?= SITE_URL ?>">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/we17311/site/index.php?san-pham">Sản phẩm</a>
+                        <a class="nav-link" href="<?= SITE_URL ?>?san-pham">Sản phẩm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/we17311/site/index.php?gio-hang">Giỏ hàng</a>
+                        <a class="nav-link" href="<?= SITE_URL ?>?gio-hang">Giỏ hàng</a>
                     </li>
                     
                 </ul>
