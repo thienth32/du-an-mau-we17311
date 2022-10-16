@@ -1,6 +1,5 @@
 <?php
 
-require_once './dao/base_dao.php';
 function user_store($name, $email, $password, $role_id, $avatar = ''){
     $sql = "insert into users 
                 (name, 
@@ -14,8 +13,13 @@ function user_store($name, $email, $password, $role_id, $avatar = ''){
     pdo_execute($sql, $name, $email, $password, $role_id, $avatar);
 }
 
-function user_all(){
-    $sql = "select * from users";
+function get_all_users(){
+    $sql = "select 
+                u.*, 
+                r.name as role_name
+            from users u
+            join roles r
+                on r.id = u.role_id";
     return pdo_query($sql);
 }
 

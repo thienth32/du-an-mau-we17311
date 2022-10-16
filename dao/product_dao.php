@@ -1,5 +1,4 @@
 <?php
-require_once '../dao/base_dao.php';
 function get_products_by_cate_ids($list_ids = []){
     $sqlQuery = "select 
                         p.*,

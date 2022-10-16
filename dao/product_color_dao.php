@@ -1,5 +1,4 @@
 <?php
-require_once '../dao/base_dao.php';
 function get_product_colors($id){
     $sqlQuery = "select 
                     pcx.product_id,

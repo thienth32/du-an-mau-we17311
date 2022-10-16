@@ -1,5 +1,4 @@
 <?php
-require_once '../dao/base_dao.php';
 
 function get_all_categories($list_ids = []){
     $sqlQuery = "select * from categories";

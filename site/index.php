@@ -1,5 +1,6 @@
 <?php
 require_once '../global.php';
+require_once '../dao/base_dao.php';
 if(isset($_GET['san-pham'])){
 
     $VIEW_NAME = 'san-pham.php';
