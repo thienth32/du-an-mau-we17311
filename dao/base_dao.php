@@ -22,4 +22,11 @@ function pdo_query($sql){
     return $stmt->fetchAll();
 }
 
+function pdo_query_one($sql){
+    $connect = pdo_get_connect();
+    $stmt = $connect->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetch();
+}
+
 ?>

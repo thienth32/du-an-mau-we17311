@@ -19,7 +19,11 @@
                 <?php foreach($product_by_id as $item):?>
                 <tr>
                     <td><?= $item['id']?></td>
-                    <td><?= $item['name']?></td>
+                    <td>
+                        <a href="<?= SITE_URL . "?chi-tiet&id=" . $item['id'] ?>">
+                            <?= $item['name']?>
+                        </a>
+                    </td>
                     <td><?= $item['category_id']?></td>
                     <td><?= $item['price']?></td>
                 </tr>
