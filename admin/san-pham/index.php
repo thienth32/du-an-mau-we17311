@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once '../../global.php';
 if(isset($_GET['create'])){
     $VIEW_NAME = 'create.php';

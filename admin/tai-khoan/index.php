@@ -1,6 +1,13 @@
 <?php
+session_start();
 require_once '../../dao/base_dao.php';
 require_once '../../global.php';
+
+if(check_admin_role() == false){
+    header("location: " . SITE_URL . '?login&msg=Bạn không có quyền truy cập!');
+    die;
+}
+
 if(isset($_GET['tao-moi'])){
     require_once '../../dao/role_dao.php';
     $roles = role_all();

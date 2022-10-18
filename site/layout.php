@@ -28,6 +28,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= SITE_URL ?>?gio-hang">Giỏ hàng</a>
                     </li>
+                    <?php if(isset($_SESSION['auth'])):?>
+                        <li class="nav-item">
+                            <label for="">Xin chào, <?= $_SESSION['auth']['name']?></label>
+                        </li>
+                    <?php endif?>
                     
                 </ul>
             </div>
